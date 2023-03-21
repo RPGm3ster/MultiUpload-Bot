@@ -44,7 +44,7 @@ async def streemhide(event):
 
     async with anjana.action(event.chat_id, 'document'):
         await msg.edit("Now Uploading to StreamHide")
-        url = "https://api.streamhide.com/api/file/info?key=1911p25sv3nwyagv2qtw&file_code={amjana.file.name}"
+        url ="https://api.streamhide.com/api/upload/server?key=1911p25sv3nwyagv2qtw
         r = get(url)
 
         url2 = f"https://{r.json()['data']['server']}.streamhide.com/uploadFile"
